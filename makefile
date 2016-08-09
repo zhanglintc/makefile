@@ -3,7 +3,7 @@ objs = foo.o bar.o
 
 ifeq ($(OS), Windows_NT)
 	RM = del
-	TARGET = $(name) + .exe
+	TARGET = $(name).exe
 else
 	RM = rm -f
 	TARGET = $(name)
